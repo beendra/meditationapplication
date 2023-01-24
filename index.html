@@ -12,7 +12,7 @@
     <div class="app">
 
         <div class="vid-container">
-            <video>
+            <video loop>
                 <source src="./video/rain.mp4" type="video/mp4">
             </video>
         </div>
@@ -21,10 +21,11 @@
             <button data-time="120">2 Minutes</button>
             <button data-time="300">5 Minutes</button>
             <button data-time="600">10 Minutes</button>
-            <button>Infinite Loop</button>
+            <button data-time="3600">60 Minutes</button>
         </div>
+
         <div class="player-container">
-            <audio class="track">
+            <audio class="song">
                 <source src="./sounds/rain.mp3">
             </audio>
             <img src = "./svg/play.svg" alt="play" class="play">
@@ -62,6 +63,7 @@
             </svg>
             <h3 class="time-display">0:00</h3>
         </div>
+
         <div class="sound-select">
             <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4">
                 <img src="./svg/rain.svg" alt="rain">
